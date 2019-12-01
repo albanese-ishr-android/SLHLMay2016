@@ -23,6 +23,11 @@ public class Client {
         setBedroom(r);
     }
 
+    public Client(int id, String name) {
+        customerID = id;
+        this.name = name;
+    }
+
     //Accessor and mutator methods
     //Also known as getters and setters.
     //These are the methods that allow you to change the variables or see their value.
