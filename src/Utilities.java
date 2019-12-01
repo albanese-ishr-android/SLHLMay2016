@@ -1,13 +1,13 @@
 public class Utilities {
 
-    Room[] allRooms;
+    public static Room[] allRooms;
 
     public static String sayHello(String name) {
         String message = "Hello there, " + name;
         return message;
     }
 
-    public int[] findRooms() {
+    public static int[] findRooms() {
         int[] availableRooms = new int[100];
         int j;
         j = 0;
