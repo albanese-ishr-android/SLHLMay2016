@@ -11,6 +11,10 @@ public class BatesMotel {
 
     public static void newClient(Client client, LinkedList<Client> bookingsList){
 
+        //If a clients are added on the same day, then the new one is added
+        //after the second one.
+
+        
     }
 
 }
