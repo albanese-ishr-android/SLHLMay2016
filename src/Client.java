@@ -7,6 +7,7 @@ public class Client {
 
     private int customerID;
     private String name;
+    private int arrivalDay;
     private Dates arrive;
     private Dates leave;
     private Room bedroom;
