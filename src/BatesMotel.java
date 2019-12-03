@@ -1,11 +1,11 @@
 import java.util.LinkedList;
 
 public class BatesMotel {
-
+    public static LinkedList<Client> list = new LinkedList<Client>();
 
     public static void main(String[] args) {
 
-        LinkedList<Client> list = new LinkedList<Client>();
+
 
         Client firstClient = new Client("Albanese", 4);
         Client secondClient = new Client("Bill", 7);
@@ -13,7 +13,7 @@ public class BatesMotel {
         Client fourthClient = new Client("Joe", 2);
         Client fifthClient = new Client("Jill", 27);
         Client sixthClient = new Client("Nancy", 2);
-        Client seventhClient = new Client("Rita", 1);
+        Client seventhClient = new Client("Rita", 2);
 
         newClient(firstClient, list);
         newClient(secondClient, list);
@@ -23,7 +23,12 @@ public class BatesMotel {
         newClient(sixthClient, list);
         newClient(seventhClient, list);
 
-        printList(list);
+        //   printList(list);
+
+        System.out.println(list.size());
+        todaysClients(97);
+        System.out.println(list.size());
+
     }
 
     public static void newClient(Client client, LinkedList<Client> bookingsList){
@@ -77,6 +82,35 @@ public class BatesMotel {
         for (Client client : list) {
             if (client != null) {
                 System.out.println(client.getName() + "\t Check in date: " + client.getArrivalDay());
+            }
+        }
+
+    }
+
+    public static void todaysClients(int today) {
+        Client[] todaysClientsArray = new Client[100];
+
+        int i = 0;
+
+
+
+        /*
+        //This is the IB's bullshit code which doesn't work!
+        while(client != null && client.getArrivalDay() == today){
+            todaysClientsArray[i] = client;
+            i = i + 1;
+            list.remove(index);
+            client = list.get(index);
+        }
+         */
+
+        for (int index = 0; index < list.size(); index++) {
+            Client client = list.get(index);
+            if (client.getArrivalDay() == today) {
+                todaysClientsArray[i] = client;
+                i++;
+                list.remove(index);
+                index--; //Take into account two dates that are next to each other.
             }
         }
 
