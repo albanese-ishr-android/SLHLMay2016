@@ -16,6 +16,14 @@ public class Client {
     //The parameters that are passed in are whatever you decide are required
     //to make a new object.
 
+    public int getArrivalDay() {
+        return arrivalDay;
+    }
+
+    public void setArrivalDay(int arrivalDay) {
+        this.arrivalDay = arrivalDay;
+    }
+
     public Client(int id, String c, Dates dateIn, Dates dateOut, Room r) {
         setCustomerID(id);
         setName(c);
