@@ -10,7 +10,7 @@ public class BatesMotel {
     }
 
     public static void newClient(Client client, LinkedList<Client> bookingsList){
-        
+
     }
 
 }
