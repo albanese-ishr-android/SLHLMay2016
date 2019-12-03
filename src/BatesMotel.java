@@ -116,4 +116,5 @@ public class BatesMotel {
 
     }
 
+    //TODO: Implement sorting algorithm.
 }
