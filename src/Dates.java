@@ -15,6 +15,27 @@ public class Dates {
         return 0;
     }
 
+    public static int StayDays(int x, int y){
+        return y - x;
+    }
+
+    public static int compareDates(int x, int y){
+        if(x > y ){
+            return x;
+        } else  if(x < y){
+            return y;
+        } else{
+            return 0;
+        }
+    }
+
+    public static boolean equalDate(int x, int y){
+        if(x == y) {
+            return true;
+        } else {
+            return false;
+        }
+    }
     public int getDay() {
         return day;
     }
