@@ -34,7 +34,7 @@ public class BatesMotel {
     }
 
     public static void printList(LinkedList<Client> list){
-        
+
     }
 
 }
